@@ -26,7 +26,6 @@ class toDoListController extends Controller
 
     public function saveItem(Request $request)
     {
-
         $newListItem = new ListItem;
         $newListItem->name = $request->input('newItem');
         $newListItem->is_complete = 0;
