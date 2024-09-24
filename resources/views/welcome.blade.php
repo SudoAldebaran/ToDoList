@@ -126,7 +126,7 @@
                     <p>{{ $listItem->name }}</p>
                     <form method="POST" action="{{ route('markCompleteRoute', $listItem->id) }}">
                         {{ csrf_field() }}
-                        <button type="submit">Done</button>
+                        <button type="submit">Compléter</button>
                     </form>
                 </div>
             @endforeach
@@ -142,9 +142,9 @@
                         {{ csrf_field() }}
                         <!-- Bouton vert qui change le texte et la couleur au survol -->
                         <button type="submit" class="button-done"
-                                onmouseover="this.innerHTML='Undone'; this.style.backgroundColor='#f28b82';"
-                                onmouseout="this.innerHTML='Done'; this.style.backgroundColor='green';">
-                            Done
+                                onmouseover="this.innerHTML='Non-fait'; this.style.backgroundColor='#f28b82';"
+                                onmouseout="this.innerHTML='Fait'; this.style.backgroundColor='green';">
+                            Fait
                         </button>
                     </form>
                 </div>
