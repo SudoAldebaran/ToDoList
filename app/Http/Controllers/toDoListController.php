@@ -52,7 +52,6 @@ class toDoListController extends Controller
         $listItem->completed_at = null;
         $listItem->save();
 
-
         return redirect()->back();
     }
 }
